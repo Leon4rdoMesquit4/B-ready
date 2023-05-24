@@ -54,6 +54,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8013A7D2A1A5641002FFB2A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E8013A772A17BACF002FFB2A /* OnboardingView.swift */,
+				E8013A792A17C522002FFB2A /* TelaDeOnboarding.swift */,
+				E8013A7B2A17C825002FFB2A /* OnboardingPage.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E8013A7E2A1A566A002FFB2A /* TelaDeConteudo */ = {
+			isa = PBXGroup;
+			children = (
+				E822D9C42A1268CA008A1750 /* Tela principal.swift */,
+				E822D9C82A12C4EC008A1750 /* BotaoLink.swift */,
+			);
+			path = TelaDeConteudo;
+			sourceTree = "<group>";
+		};
+		E8013A7F2A1A568D002FFB2A /* TelaHome */ = {
+			isa = PBXGroup;
+			children = (
+				E822D9C22A11AB59008A1750 /* caixa.swift */,
+				E822D9B62A0EC5B4008A1750 /* ContentView.swift */,
+				E822D9CC2A141D0B008A1750 /* BotaoFiltro.swift */,
+				E822D9D02A1552A5008A1750 /* parteDeCima.swift */,
+				E822D9CE2A154FB7008A1750 /* Error.swift */,
+				E895B4472A1698910080C383 /* filtro.swift */,
+			);
+			path = TelaHome;
+			sourceTree = "<group>";
+		};
+		E8013A802A1A574F002FFB2A /* Dados */ = {
+			isa = PBXGroup;
+			children = (
+				E822D9CA2A13F857008A1750 /* BaDa.swift */,
+			);
+			path = Dados;
+			sourceTree = "<group>";
+		};
 		E822D9A82A0EC5B4008A1750 = {
 			isa = PBXGroup;
 			children = (
@@ -74,20 +114,12 @@
 			isa = PBXGroup;
 			children = (
 				E822D9B42A0EC5B4008A1750 /* testeDoPrototipoApp.swift */,
-				E822D9B62A0EC5B4008A1750 /* ContentView.swift */,
 				E822D9B82A0EC5B5008A1750 /* Assets.xcassets */,
 				E822D9BA2A0EC5B5008A1750 /* Preview Content */,
-				E822D9C22A11AB59008A1750 /* caixa.swift */,
-				E822D9C42A1268CA008A1750 /* Tela principal.swift */,
-				E822D9CA2A13F857008A1750 /* BaDa.swift */,
-				E822D9C82A12C4EC008A1750 /* BotaoLink.swift */,
-				E822D9CC2A141D0B008A1750 /* BotaoFiltro.swift */,
-				E822D9CE2A154FB7008A1750 /* Error.swift */,
-				E822D9D02A1552A5008A1750 /* parteDeCima.swift */,
-				E895B4472A1698910080C383 /* filtro.swift */,
-				E8013A772A17BACF002FFB2A /* OnboardingView.swift */,
-				E8013A792A17C522002FFB2A /* TelaDeOnboarding.swift */,
-				E8013A7B2A17C825002FFB2A /* OnboardingPage.swift */,
+				E8013A802A1A574F002FFB2A /* Dados */,
+				E8013A7F2A1A568D002FFB2A /* TelaHome */,
+				E8013A7E2A1A566A002FFB2A /* TelaDeConteudo */,
+				E8013A7D2A1A5641002FFB2A /* Onboarding */,
 			);
 			path = testeDoPrototipo;
 			sourceTree = "<group>";
@@ -317,8 +349,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,8 +378,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
