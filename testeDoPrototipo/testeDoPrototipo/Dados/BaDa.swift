@@ -1,6 +1,6 @@
 import Foundation
 
-var tipo = [caso.prenatal:"Pré-natal", caso.bemEstarSaude:"Bem-estar e saúde", caso.apps:"Apps", caso.direitos:"Direitos", caso.cursoDeGravidas:"Cursos de grávida", caso.depoimento:"Depoimentos"]
+var tipo = [caso.prenatal:"Pré-natal", caso.bemEstarSaude:"Bem-estar e saúde", caso.apps:"Apps", caso.direitos:"Direitos", caso.cursoDeGravidas:"Cursos de grávida"]
 
 enum caso{
     case prenatal
@@ -9,8 +9,7 @@ enum caso{
     case direitos
     case cursoDeGravidas
     case ajudaPsicologica
-    case depoimento
-    case nenhum
+
 }
 
 struct Tela{
@@ -45,10 +44,20 @@ struct sugestaoLista{
              link: "https://flo.health/pt",
              temLink: false, tipo:0, tituloLink: ""),
         Tela(titulo: "Exames",
-             texto: "Os principais exames que são realizados durante o pré-natal são: Hemograma completo, Glicemia, Sorologia para HIV e VDRL, Sistema ABO e fator Rh, Toxoplasmose e rubéola, Exame de urina, Exame de fezes, Sorologia para hepatite B e C, Papanicolaou e o Ultrassom. Lembrando que após o acompanhamento no pré-natal você será orientada sobre cada exame.",
+             texto: "Os principais exames que são realizados durante o pré-natal são: Tipagem sanguínea e fator Rh, Hemograma, Eletroforese de hemoglobina, Glicemia, Exame de cultura de urina com antibiograma, Exame preventivo de câncer de colo de útero, Teste rápido de sífilis e VDRL, Avaliação odontológica, Testes de HIV, Teste de malária, Exames para o(a) companheiro(a), Testes para hepatite B (HBsAg) e Exame de toxoplasmose. Lembrando que após o acompanhamento no pré-natal você será orientada sobre cada exame.",
              imagem: "Image 7",
              link: "https://flo.health/pt",
              temLink: false, tipo:0, tituloLink: ""),
+        Tela(titulo: "Vacinas",
+             texto: "As principais vacinas indicadas para a gestante são: Vacina covid-19, Vacina influenza (gripe), Vacina hepatite B, Vacina dTpa, Vacina dupla adulto. Lembrando que após o acompanhamento no pré-natal você será orientada sobre cada exame.",
+             imagem: "Image 20",
+             link: "https://flo.health/pt",
+             temLink: false, tipo:0, tituloLink: ""),
+        Tela(titulo: "Caderneta da gestante",
+             texto: "A caderneta da gestante disponível no Sistema Único de Saúde oferece informações importantes sobre o período da gestação.",
+             imagem: "Image 21",
+             link: "https://bvsms.saude.gov.br/bvs/publicacoes/caderneta_gestante_versao_eletronica_2022.pdf",
+             temLink: true, tipo:0, tituloLink: "Acesse a caderneta de poupança"),
         
         //Bem-estar e saúde
         Tela(titulo: "Rede de apoio",
@@ -61,8 +70,8 @@ struct sugestaoLista{
              imagem: "Image 9",
              link: "",
              temLink: false, tipo:1, tituloLink: ""),
-    Tela(titulo: "Alimentação Saudável",
-             texto: "Manter uma alimentação é muito importante, principalmente durante a gravidez. Durante esse período, é preciso garantir que seu bebê receba os nutrientes de que precisa para um desenvolvimento saudável. Uma dieta balanceada prepara o corpo para o trabalho de parto, parto e amamentação. O ganho de peso inadequado e excessivo durante a gravidez pode representar riscos  para a saúde da mãe e do bebê e, portanto, é importante evitá-lo.",
+        Tela(titulo: "Alimentação Saudável",
+             texto: "Manter uma alimentação é muito importante, principalmente durante a gravidez. Durante esse período, é preciso garantir que seu bebê receba os nutrientes de que precisa para um desenvolvimento saudável. Uma dieta balanceada prepara o corpo para o trabalho de parto, parto e amamentação. O ganho de peso inadequado e excessivo durante a gravidez pode representar riscos  para a saúde da mãe e do bebê e, portanto, é importante evitá-lo. Para acompanhamento especializado e personalizado marque uma consulta com uma nutricionista.",
              imagem: "Image 10",
              link: "https://www.gov.br/saude/pt-br/assuntos/noticias/2021-1/novembro/ministerio-da-saude-lanca-protocolo-de-uso-do-guia-alimentar-para-gestantes",
              temLink: false, tipo:1, tituloLink: ""),
@@ -71,6 +80,11 @@ struct sugestaoLista{
              imagem: "Image 11",
              link: "https://www.gov.br/saude/pt-br/assuntos/noticias/2021-1/novembro/ministerio-da-saude-lanca-protocolo-de-uso-do-guia-alimentar-para-gestantes",
              temLink: true, tipo:1, tituloLink: "Acesse o guia alimentar"),
+        Tela(titulo: "Acompanhamento psicológico",
+            texto: "",
+            imagem: "Image 22",
+            link: "https://cincoporcento.com.br",
+            temLink: true, tipo:1, tituloLink: "Acessar o curso"),
         
         
         //Aplicativos
@@ -144,7 +158,6 @@ struct sugestaoLista{
         texto: "O curso \"5%\" é uma ferramenta completa para pais e mães que desejam criar seus filhos de forma saudável e equilibrada. Ele abrange desde o nascimento até os 2 anos de idade da criança. Voltado para pais, o curso aborda todos os aspectos da família, incluindo o físico, mental e espiritual. É um recurso abrangente que oferece suporte na criação dos filhos, garantindo um desenvolvimento saudável em todas as áreas.",
         imagem: "Image 19",
         link: "https://cincoporcento.com.br",
-        temLink: true, tipo:4, tituloLink: "Acessar o curso"),
-        
+        temLink: true, tipo:4, tituloLink: "Acessar o curso")
     ]
 }

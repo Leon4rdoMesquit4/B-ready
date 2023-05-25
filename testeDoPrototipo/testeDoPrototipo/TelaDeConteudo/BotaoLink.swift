@@ -28,7 +28,7 @@ struct BotaoLink: View {
                         .font(.largeTitle)
                         .foregroundColor(Color("Roxo_padrao1"))
                         .padding(.top, 20)
-                    Text("Confira mais sobre isso no site")
+                    Text("Confira mais sobre isso no link abaixo")
                         .padding(.top, 10)
                         .padding(.bottom, 9)
                         .foregroundColor(Color("Cinza_texto"))

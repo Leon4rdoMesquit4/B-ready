@@ -89,6 +89,7 @@
 		E8013A802A1A574F002FFB2A /* Dados */ = {
 			isa = PBXGroup;
 			children = (
+				E822D9B82A0EC5B5008A1750 /* Assets.xcassets */,
 				E822D9CA2A13F857008A1750 /* BaDa.swift */,
 			);
 			path = Dados;
@@ -113,8 +114,6 @@
 		E822D9B32A0EC5B4008A1750 /* testeDoPrototipo */ = {
 			isa = PBXGroup;
 			children = (
-				E822D9B42A0EC5B4008A1750 /* testeDoPrototipoApp.swift */,
-				E822D9B82A0EC5B5008A1750 /* Assets.xcassets */,
 				E822D9BA2A0EC5B5008A1750 /* Preview Content */,
 				E8013A802A1A574F002FFB2A /* Dados */,
 				E8013A7F2A1A568D002FFB2A /* TelaHome */,
@@ -127,6 +126,7 @@
 		E822D9BA2A0EC5B5008A1750 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E822D9B42A0EC5B4008A1750 /* testeDoPrototipoApp.swift */,
 				E822D9BB2A0EC5B5008A1750 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";

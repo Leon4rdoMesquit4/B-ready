@@ -6,18 +6,13 @@ struct filtro: View {
                                , .bemEstarSaude
                                , .apps
                                , .direitos
-                               , .cursoDeGravidas
-                               ,.depoimento]
+                               , .cursoDeGravidas]
     
     @Binding var ativado:[Bool]
     
-    
-
-    @State var casoAtual:caso = .nenhum
-    
     var body: some View {
         HStack {
-            ForEach(0..<6, id: \.self){ n in
+            ForEach(0..<5, id: \.self){ n in
                 
                 ZStack{
                     Button {
@@ -35,10 +30,13 @@ struct filtro: View {
                         
                     } label: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 19)
-                                .frame(width: 150, height: 35)
-                                .foregroundColor(ativado[n] ? .blue : .gray.opacity(0.4))
+//                            RoundedRectangle(cornerRadius: 19)
+//                                .frame(width: 150, height: 35)
+//                                .foregroundColor(ativado[n] ? .blue : .gray.opacity(0.4))
                             Text(tipo[casos[n]]!)
+                                .frame(minWidth: 150)
+                                .padding(.horizontal,10).padding(.vertical, 13)
+                                .background(ativado[n] ? .blue : .gray.opacity(0.4)).cornerRadius(19)
                                 .font(.caption2)
                                 .fontWeight(.bold)
                                 .foregroundColor(ativado[n] ? .white : .black.opacity(0.5))

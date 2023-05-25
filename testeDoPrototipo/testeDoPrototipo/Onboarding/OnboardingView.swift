@@ -3,6 +3,8 @@ import SwiftUI
 struct conteudo: View {
     @State var tamanho:Double
     @State var imagem:String
+    @State var texto:String
+    @State var titulo:String
     var body: some View {
         Image(imagem)
             .resizable()
@@ -13,14 +15,14 @@ struct conteudo: View {
             .offset(x:0, y:-16)
         VStack {
             HStack {
-                Text("Título Grande")
+                Text(titulo)
                     .offset(x:0, y:-55)
                 .font(.system(.title2))
                 .padding(.leading, 18)
                 Spacer()
             }.padding(.bottom, 3)
             HStack {
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet auctor arcu. Duis dapibus erat vitae varius mattis. Nullam sed rutrum massa. Nam a porta lacus, vel bibendum mi. Pellentesque a nulla a odio cursus consequat vel sit amet magna.")
+                Text(texto)
                     .foregroundColor(.gray)
                     .offset(x:0, y:-50)
                     .ignoresSafeArea()
@@ -35,6 +37,6 @@ struct conteudo: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         @State var temLink:Bool = true
-        conteudo(tamanho: 300, imagem: "image")
+        conteudo(tamanho: 300, imagem: "image", texto: "Lorem ipsum", titulo: "sijksjfdf")
     }
 }
